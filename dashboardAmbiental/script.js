@@ -1,4 +1,4 @@
-const map = L.map('map').setView([23.6345, -102.5528], 5); // Centro México
+const map = L.map('map').setView([18.65, -99.05], 9); // Centro Morelos
 
 L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
   attribution: '© OpenStreetMap contributors',
@@ -22,6 +22,6 @@ let chart = new Chart(ctx, {
 // Cambiar dataset (simulado)
 document.getElementById('datasetSelector').addEventListener('change', (e) => {
   const dataset = e.target.value;
-  alert(`Cambiar a dataset: ${dataset}`);
+  // alert(`Cambiar a dataset: ${dataset}`);
   // Aquí cargarás datos desde /data
 });
